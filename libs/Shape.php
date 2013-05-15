@@ -25,7 +25,7 @@ class Shape extends BasicObject {
         return $this->material;
     }
     
-    public function indexedFaceSets() {
+    public function faceSets() {
         return $this->indexedFaceSets;
     }
     
@@ -33,7 +33,7 @@ class Shape extends BasicObject {
         $this->transform = $material;
     }
     
-    public function setIndexedFaceSets($indexedFaceSets) {
+    public function setFaceSets($indexedFaceSets) {
         $this->indexedFaceSets = $indexedFaceSets;
     }
     

@@ -9,7 +9,7 @@ class X3D {
         ob_start();
         include dirname(__DIR__)."/template/{$name}.php";
         $contents = ob_get_contents();
-        ob_clean();
+        ob_end_clean();
         
         return $contents;
     }
@@ -29,7 +29,7 @@ class X3D {
     public function attributes2String() {
         $string = '';
         foreach($this->attributes as $name => $value) {
-            $string .= "{$name}={$value}\n";
+            $string .= "{$name}=\"{$value}\"\n";
         }
         
         return $string;
@@ -43,6 +43,7 @@ class X3D {
 /*** Class Inclusion ***/
 
 include __DIR__.'/Coordinates.php';
+include __DIR__.'/Color.php';
 include __DIR__.'/FaceSets.php';
 include __DIR__.'/Material.php';
 include __DIR__.'/Transform.php';

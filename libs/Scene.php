@@ -19,7 +19,7 @@ class Scene extends X3D {
     
     private function createX3D() {
         foreach($this->shapes as $shape) {
-            $this->scene .= "\n"+$shape->toX3D()+"\n";
+            $this->scene .= "\n".$shape->toX3D()."\n";
         }
     }
     

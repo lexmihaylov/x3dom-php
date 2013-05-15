@@ -1,4 +1,4 @@
 <IndexedFaceSet solid="<?php echo ($this->solid()?'true':'false') ?>"
-    <?php echo $this->faceSetsString ?> >
-    <Coordinate <?php echo $this->coordinatesString ?>/>
+    coordIndex="<?php echo $this->faceSetsString ?>" >
+    <Coordinate point="<?php echo $this->coordinatesString ?>" />
 </IndexedFaceSet>

@@ -22,6 +22,14 @@ class Coordinates {
     public function toString() {
         return "{$this->x} {$this->y} {$this->z}";
     }
+    
+    public static function Create($x, $y, $z) {
+        return new Coordinates($x, $y, $z);
+    }
+    
+    public static function CreateString($x, $y, $z) {
+        return self::Create($x, $y, $z)->toString();
+    }
 }
 
 ?>

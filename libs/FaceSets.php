@@ -11,26 +11,32 @@
  * @author alexander
  */
 class FaceSets extends X3D {
-    private $faceSets = array();
+    private $points = array();
+    private $faces = array();
     private $solid = true;
     public function __construct() {}
     
     public function toX3D() {
-        $this->faceSetsString = '';
+        $this->faceSetsString .= implode(' -1 ', $this->faces);
         $this->coordinatesString = '';
-        foreach($this->faceSets as $faceSetIndex => $coordinates) {
-            $this->faceSetsString .= "{$faceSetIndex} ";
+        
+        foreach($this->points as $coordinates) {
             $this->coordinatesString .= $coordinates->toString()." ";
         }
-        parent::toX3D('face_sets');
+        
+        return parent::toX3D('face_sets');
     }
     
-    public function set($index, $coordinates) {
-        $this->faceSets[$index] = $coordinates;
+    public function setPoint($index, $coordinates) {
+        $this->points[$index] = $coordinates;
     }
     
-    public function get($index) {
-        return $this->faceSets[$index];
+    public function setPoints(array $points) {
+        $this->points = $points;
+    }
+    
+    public function getPoint($index) {
+        return $this->points[$index];
     }
     
     public function isSolid($bool) {
@@ -41,8 +47,20 @@ class FaceSets extends X3D {
         return $this->solid;
     }
     
-    public function getAll() {
-        return $this->faceSets;
+    public function points() {
+        return $this->points;
+    }
+    
+    public function addFace($face) {
+        $this->faces[] = $face;
+    }
+    
+    public function setFaces(array $faces) {
+        $this->faces = $faces;
+    }
+    
+    public function faces() {
+        return $this->faces;
     }
 }
 

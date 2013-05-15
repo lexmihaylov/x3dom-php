@@ -11,7 +11,13 @@
  * @author alexander
  */
 class PointLamp extends BasicObject {
-    //put your code here
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public function toX3D() {
+        parent::toX3D('camera');
+    }
 }
 
 ?>

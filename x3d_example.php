@@ -6,9 +6,9 @@ $scene = new Scene();
 
 $cube = new Shape();
 // transformation and positioning
-$cube->transform()->setAttribute('translation', '2.000000 1.000000 2.000000');
-$cube->transform()->setAttribute('scale', '1.000000 1.000000 1.000000');
-$cube->transform()->setAttribute('rotation', '1.000000 0.000000 0.000000 0.000000');
+$cube->transform()->setAttribute('translation', Coordinates::CreateString(2, 1, 2));
+$cube->transform()->setAttribute('scale', Coordinates::CreateString(1, 1, 1));
+$cube->transform()->setAttribute('rotation', '1 0 0 0');
 // material properties
 $cube->material()->setAttribute('diffuseColor', '0.800 0.800 0.800');
 $cube->material()->setAttribute('specularColor', '0.401 0.401 0.401');
@@ -19,14 +19,14 @@ $cube->material()->setAttribute('transparency', '0.0');
 
 $cube->faceSets()->isSolid(true);
 // define shape points
-$cube->faceSets()->setPoint('0', Coordinates::Create(1.000000, 1.000000, -1.000000));
-$cube->faceSets()->setPoint('1', Coordinates::Create(1.000000, -1.000000, -1.000000));
-$cube->faceSets()->setPoint('2', Coordinates::Create(-1.000000, -1.000000, -1.000000));
-$cube->faceSets()->setPoint('3', Coordinates::Create(-1.000000, 1.000000, -1.000000));
-$cube->faceSets()->setPoint('4', Coordinates::Create( 1.000000, 0.999999, 1.000000));
-$cube->faceSets()->setPoint('5', Coordinates::Create(0.999999, -1.000001, 1.000000));
-$cube->faceSets()->setPoint('6', Coordinates::Create(-1.000000, -1.000000, 1.000000));
-$cube->faceSets()->setPoint('7', Coordinates::Create(-1.000000, 1.000000, 1.000000));
+$cube->faceSets()->setPoint('0', Coordinates::Create(1, 1, -1));
+$cube->faceSets()->setPoint('1', Coordinates::Create(1, -1, -1));
+$cube->faceSets()->setPoint('2', Coordinates::Create(-1, -1, -1));
+$cube->faceSets()->setPoint('3', Coordinates::Create(-1, 1, -1));
+$cube->faceSets()->setPoint('4', Coordinates::Create( 1, 0.99, 1));
+$cube->faceSets()->setPoint('5', Coordinates::Create(0.99, -1, 1));
+$cube->faceSets()->setPoint('6', Coordinates::Create(-1, -1, 1));
+$cube->faceSets()->setPoint('7', Coordinates::Create(-1, 1, 1));
 
 // define shape faces
 $cube->faceSets()->setFaces(array(

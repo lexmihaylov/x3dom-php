@@ -11,7 +11,13 @@
  * @author alexander
  */
 class Material extends X3D {
-    //put your code here
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public function toX3D() {
+        return parent::toX3D('material');
+    }
 }
 
 ?>

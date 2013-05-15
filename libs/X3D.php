@@ -40,4 +40,15 @@ class X3D {
     }
 }
 
+/*** Class Inclusion ***/
+
+include __DIR__.'/Coordinates.php';
+include __DIR__.'/FaceSets.php';
+include __DIR__.'/Material.php';
+include __DIR__.'/Transform.php';
+include __DIR__.'/Shape.php';
+include __DIR__.'/PointLamp.php';
+include __DIR__.'/Camera.php';
+include __DIR__.'/Scene.php';
+
 ?>

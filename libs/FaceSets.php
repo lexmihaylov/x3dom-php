@@ -12,6 +12,7 @@
  */
 class FaceSets extends X3D {
     private $faceSets = array();
+    private $solid = true;
     public function __construct() {}
     
     public function toX3D() {
@@ -30,6 +31,14 @@ class FaceSets extends X3D {
     
     public function get($index) {
         return $this->faceSets[$index];
+    }
+    
+    public function isSolid($bool) {
+        $this->solid = $bool;
+    }
+    
+    public function solid() {
+        return $this->solid;
     }
     
     public function getAll() {

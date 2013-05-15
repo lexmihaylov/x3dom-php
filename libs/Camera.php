@@ -10,7 +10,7 @@
  *
  * @author alexander
  */
-class Camera extends X3D {
+class Camera extends BasicObject {
     //put your code here
 }
 

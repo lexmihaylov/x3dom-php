@@ -10,7 +10,7 @@
  *
  * @author alexander
  */
-class PointLamp extends X3D {
+class PointLamp extends BasicObject {
     //put your code here
 }
 

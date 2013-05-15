@@ -10,21 +10,15 @@
  *
  * @author alexander
  */
-class Shape extends X3D {
-    private $transform;
+class Shape extends BasicObject {
     private $material;
     private $indexedFaceSets;
     
     public function __construct() {
         parent::__construct();
         
-        $this->transform = new Transform();
         $this->material = new Material();
         $this->indexedFaceSets = new FaceSets();
-    }
-    
-    public function transform() {
-        return $this->transform;
     }
     
     public function material() {
@@ -33,10 +27,6 @@ class Shape extends X3D {
     
     public function indexedFaceSets() {
         return $this->indexedFaceSets;
-    }
-    
-    public function setTransform($transform) {
-        $this->transform = $transform;
     }
     
     public function setMaterial($material) {
@@ -48,7 +38,7 @@ class Shape extends X3D {
     }
     
     public function toX3D() {
-        return $this->transform()->toX3D(parent::toX3D('shape'));
+        return parent::toX3D('shape');
     }
 }
 

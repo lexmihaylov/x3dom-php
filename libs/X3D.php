@@ -11,6 +11,9 @@ class X3D {
         
         return $contents;
     }
+    
+    
+    public function toX3D() {}
 }
 
 ?>

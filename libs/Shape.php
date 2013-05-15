@@ -11,7 +11,27 @@
  * @author alexander
  */
 class Shape extends X3D {
-    //put your code here
+    private $transform;
+    private $material;
+    public function __construct() {
+        
+    }
+    
+    public function transform() {
+        return $this->transform;
+    }
+    
+    public function material() {
+        return $this->material;
+    }
+    
+    public function setTransform($transform) {
+        $this->transform = $transform;
+    }
+    
+    public function setMaterial($material) {
+        $this->transform = $material;
+    }
 }
 
 ?>

@@ -17,17 +17,12 @@
         
         
 <Transform translation="2 1 2"
-scale="1 1 1"
-rotation="1 0 0 0"
  >
     <Shape>
     <Appearance>
-    <Material diffuseColor="0.800 0.800 0.800"
-specularColor="0.401 0.401 0.401"
-emissiveColor="0.000 0.000 0.000"
-ambientIntensity="0.333"
-shininess="0.098"
-transparency="0.0"
+    <Material diffuseColor="255 255 255"
+shininess="10.098"
+transparency="0.9"
  />
 </Appearance>    <IndexedFaceSet solid="true"
     coordIndex="0 1 2 3 -1 4 7 6 5 -1 0 4 5 1 -1 1 5 6 2 -1 2 6 7 3 -1 4 0 3 7" >

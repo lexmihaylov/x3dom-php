@@ -7,15 +7,9 @@ $scene = new Scene();
 $cube = new Shape();
 // transformation and positioning
 $cube->transform()->setAttribute('translation', Coordinates::CreateString(2, 1, 2));
-$cube->transform()->setAttribute('scale', Coordinates::CreateString(1, 1, 1));
-$cube->transform()->setAttribute('rotation', '1 0 0 0');
+
 // material properties
-$cube->material()->setAttribute('diffuseColor', '0.800 0.800 0.800');
-$cube->material()->setAttribute('specularColor', '0.401 0.401 0.401');
-$cube->material()->setAttribute('emissiveColor', '0.000 0.000 0.000');
-$cube->material()->setAttribute('ambientIntensity', '0.333');
-$cube->material()->setAttribute('shininess', '0.098');
-$cube->material()->setAttribute('transparency', '0.0');
+$cube->material()->setAttribute('diffuseColor', Color::CreateString(255, 255, 255));
 
 $cube->faceSets()->isSolid(true);
 // define shape points

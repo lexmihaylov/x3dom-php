@@ -1,3 +1,3 @@
 <Appearance>
-    <Material <?php echo $this->objectAttributes() ?> />
+    <Material <?php echo $this->attributes2String() ?> />
 </Appearance>

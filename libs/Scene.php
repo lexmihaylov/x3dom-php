@@ -13,7 +13,9 @@
 class Scene extends X3D {
     private $shapes = array();
     protected $scene = '';    
-    public function __construct() {}
+    public function __construct() {
+        parent::__construct();
+    }
     
     private function createX3D() {
         foreach($this->shapes as $shape) {

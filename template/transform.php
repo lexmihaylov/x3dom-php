@@ -1,3 +1,3 @@
-<Transform <?php echo $this->objectAttributes() ?> >
-    <?php echo $this->shape()->toX3D() ?>
+<Transform <?php echo $this->attributes2String() ?> >
+    <?php echo $this->shapeString ?>
 </Transform>

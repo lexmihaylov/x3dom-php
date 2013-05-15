@@ -1,17 +1,15 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Transform
- *
- * @author alexander
- */
 class Transform extends X3D {
-    //put your code here
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public function toX3D($shapeString) {
+        $this->shapeString = $shapeString;
+        
+        return parent::toX3D('transform');
+    }
 }
 
 ?>

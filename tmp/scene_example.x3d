@@ -19,12 +19,14 @@
 <Transform translation="0 0 0"  >
     <Shape>
 
-            <Sphere size="1 1 1"  />
     
     <Appearance>
-    <Material  />
+    <Material diffuseColor="1 1 1"  />
 </Appearance>
-    
+            <IndexedFaceSet solid="true"
+    coordIndex="0 1 2 3 -1 4 5 1 0 -1 5 6 2 1 -1 " >
+    <Coordinate point="3 3 -5 3 0 -5 -3 0 -5 -3 3 -5 3 2.99 5 2.99 0 5 -3 0 5 " />
+</IndexedFaceSet>    
 </Shape>
 </Transform>
         

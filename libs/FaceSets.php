@@ -22,7 +22,7 @@ class FaceSets extends X3D {
         foreach($this->faces as $face) {
             $this->faceSetsString .= implode(' ',$face). ' -1 ';
         }
-        $this->faceSetsString = rtrim($this->faceSetsString, ' -1 ');
+        
         foreach($this->points as $coordinates) {
             $this->coordinatesString .= $coordinates->toString()." ";
         }

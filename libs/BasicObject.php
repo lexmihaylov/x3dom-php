@@ -10,7 +10,7 @@
  *
  * @author alexander
  */
-class BasicObject extends X3D {
+class BasicObject extends X3D {    
     private $transform;
     
     public function __construct() {

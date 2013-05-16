@@ -12,13 +12,19 @@
  */
 class Shape extends BasicObject {
     private $material;
-    private $indexedFaceSets;
+    private $indexedFaceSets = null;
+    private $shape = null;
     
-    public function __construct() {
+    public function __construct($definedShape = null) {
         parent::__construct();
         
         $this->material = new Material();
-        $this->indexedFaceSets = new FaceSets();
+        
+        if($definedShape != null) {
+            $this->shape = new DefinedShape($definedShape);
+        } else {
+            $this->indexedFaceSets = new FaceSets();
+        }
     }
     
     public function material() {
@@ -35,6 +41,14 @@ class Shape extends BasicObject {
     
     public function setFaceSets($indexedFaceSets) {
         $this->indexedFaceSets = $indexedFaceSets;
+    }
+    
+    public function setShape($definedShape) {
+        $this->shape = new DefinedShape($definedShape);
+    }
+    
+    public function shape() {
+        return $this->shape;
     }
     
     public function toX3D() {

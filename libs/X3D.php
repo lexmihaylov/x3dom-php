@@ -41,7 +41,7 @@ class X3D {
 }
 
 /*** Class Inclusion ***/
-
+include __DIR__.'/TypeDef.php';
 include __DIR__.'/Coordinates.php';
 include __DIR__.'/Color.php';
 include __DIR__.'/FaceSets.php';

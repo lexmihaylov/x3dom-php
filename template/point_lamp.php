@@ -1,1 +1,0 @@
-<PointLight <?php $this->attributes2String() ?> />

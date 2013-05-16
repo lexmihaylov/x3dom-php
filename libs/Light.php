@@ -6,17 +6,20 @@
  */
 
 /**
- * Description of SimpleShape
+ * Description of PointLamp
  *
  * @author alexander
  */
-class DefinedShape extends X3D {    
+class Light extends BasicObject {
     private $type;
-    
-    public function __construct($type) {
+    public function __construct($type = LightType::PointLight) {
         parent::__construct();
         
         $this->type = $type;
+    }
+    
+    public function toX3D() {
+        parent::toX3D('light');
     }
     
     public function setType($type) {
@@ -25,10 +28,6 @@ class DefinedShape extends X3D {
     
     public function type() {
         return $this->type;
-    }
-    
-    public function toX3D() {
-        return parent::toX3D('defined_shape');
     }
 }
 

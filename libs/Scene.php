@@ -32,6 +32,10 @@ class Scene extends X3D {
         $this->shapes[] = $shape;
     }
     
+    public function setShapes($shapes) {
+        $this->shapes = $shapes;
+    }
+    
     public function shapes() {
         return $this->shapes;
     }

@@ -29,7 +29,7 @@ class X3D {
     public function attributes2String() {
         $string = '';
         foreach($this->attributes as $name => $value) {
-            $string .= "{$name}=\"{$value}\"\n";
+            $string .= "{$name}=\"{$value}\" ";
         }
         
         return $string;
@@ -52,5 +52,8 @@ include __DIR__.'/Shape.php';
 include __DIR__.'/PointLamp.php';
 include __DIR__.'/Camera.php';
 include __DIR__.'/Scene.php';
+
+/*** Predefined shapes ***/
+include __DIR__.'/Cube.php';
 
 ?>

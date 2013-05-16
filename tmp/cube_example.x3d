@@ -16,13 +16,13 @@
                     />
         
         
-<Transform translation="2 1 2"  >
+<Transform translation="0 0 0"  >
     <Shape>
     <Appearance>
-    <Material diffuseColor="255 255 255"  />
+    <Material diffuseColor="0.8 0.8 0.8"  />
 </Appearance>    <IndexedFaceSet solid="true"
-    coordIndex="0 1 2 4 -1 4 7 6 5 -1 0 4 5 1 -1 1 5 6 2 -1 2 6 7 3 -1 4 0 3 7" >
-    <Coordinate point="1 1 -1 1 -1 -1 -1 -1 -1 -1 1 -1 1 0.99 1 0.99 -1 1 -1 -1 1 -1 1 1 " />
+    coordIndex="0 1 2 3 -1 4 7 6 5 -1 0 4 5 1 -1 1 5 6 2 -1 2 6 7 3 -1 4 0 3 7" >
+    <Coordinate point="1 1 -1 1 -1 -1 -1 -1 -1 -1 1 -1 1 0.999999 1 0.999999 -1.000001 1 -1 -1 1 -1 1 1 " />
 </IndexedFaceSet></Shape>
 </Transform>
         

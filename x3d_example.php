@@ -24,12 +24,12 @@ $cube->faceSets()->setPoint('7', Coordinates::Create(-1, 1, 1));
 
 // define shape faces
 $cube->faceSets()->setFaces(array(
-    '0 1 2 3', 
-    '4 7 6 5', 
-    '0 4 5 1', 
-    '1 5 6 2', 
-    '2 6 7 3', 
-    '4 0 3 7'
+    array(0, 1, 2, 3),
+    array(4, 7, 6, 5),
+    array(0, 4, 5, 1),
+    array(1, 5, 6, 2),
+    array(2, 6, 7, 3),
+    array(4, 0, 3, 7)
 ));
 
 $scene->appendShape($cube);

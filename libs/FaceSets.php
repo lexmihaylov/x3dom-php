@@ -17,9 +17,12 @@ class FaceSets extends X3D {
     public function __construct() {}
     
     public function toX3D() {
-        $this->faceSetsString .= implode(' -1 ', $this->faces);
+        $this->faceSetsString = '';
         $this->coordinatesString = '';
-        
+        foreach($this->faces as $face) {
+            $this->faceSetsString .= implode(' ',$face). ' -1 ';
+        }
+        $this->faceSetsString = rtrim($this->faceSetsString, ' -1 ');
         foreach($this->points as $coordinates) {
             $this->coordinatesString .= $coordinates->toString()." ";
         }

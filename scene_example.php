@@ -6,10 +6,10 @@ $scene = new Scene();
 
 $cube = new Shape();
 // transformation and positioning
-$cube->transform()->setAttribute('translation', Coordinates::CreateString(0, 0, 0));
+$cube->transform()->setAttribute(TransformAttribute::translation, Coordinates::CreateString(0, 0, 0));
 
 // material properties
-$cube->material()->setAttribute('diffuseColor', Color::CreateString(1, 1, 1));
+$cube->material()->setAttribute(MaterialAttribute::diffuseColor, Color::CreateString(1, 1, 1));
 
 $cube->faceSets()->isSolid(true);
 // define shape points

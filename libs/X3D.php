@@ -50,7 +50,7 @@ include __DIR__.'/Transform.php';
 include __DIR__.'/BasicObject.php';
 include __DIR__.'/DefinedShape.php';
 include __DIR__.'/Shape.php';
-include __DIR__.'/PointLamp.php';
+include __DIR__.'/Light.php';
 include __DIR__.'/Camera.php';
 include __DIR__.'/Scene.php';
 

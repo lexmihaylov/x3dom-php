@@ -10,8 +10,7 @@
                         type='"EXAMINE", "ANY"'
                         avatarSize="0.25, 1.75, 0.75"
                         />
-        <Background DEF="WO_World"
-                    groundColor="0.051 0.051 0.051"
+        <Background groundColor="0.051 0.051 0.051"
                     skyColor="0.051 0.051 0.051"
                     />
         

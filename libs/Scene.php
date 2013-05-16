@@ -15,6 +15,14 @@ class Scene extends X3D {
     protected $scene = '';    
     public function __construct() {
         parent::__construct();
+        
+        $this->setAttribute(SceneNavigationAttribute::headlight, 'false');
+        $this->setAttribute(SceneNavigationAttribute::visibilityLimit, '0.0');
+        $this->setAttribute(SceneNavigationAttribute::type, '"EXAMINE", "ANY"');
+        $this->setAttribute(SceneNavigationAttribute::avatarSize, '0.25, 1.75, 0.75');
+        
+        $this->setAttribute(SceneBackgroundAttribute::groundColor, Color::CreateString(0.051, 0.051, 0.051));
+        $this->setAttribute(SceneBackgroundAttribute::skyColor, Color::CreateString(0.051, 0.051, 0.051));
     }
     
     private function createX3D() {

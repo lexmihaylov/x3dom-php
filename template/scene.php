@@ -5,14 +5,13 @@
         <meta name="generator" content="Blender 2.66 (sub 1)" />
     </head>
     <Scene>
-        <NavigationInfo headlight="false"
-                        visibilityLimit="0.0"
-                        type='"EXAMINE", "ANY"'
-                        avatarSize="0.25, 1.75, 0.75"
+        <NavigationInfo headlight="<?php echo $this->getAttribute('headlight') ?>"
+                        visibilityLimit="<?php echo $this->getAttribute('visibilityLimit') ?>"
+                        type='<?php echo $this->getAttribute('type') ?>'
+                        avatarSize="<?php echo $this->getAttribute('avatarSize') ?>"
                         />
-        <Background DEF="WO_World"
-                    groundColor="0.051 0.051 0.051"
-                    skyColor="0.051 0.051 0.051"
+        <Background groundColor="<?php echo $this->getAttribute('groundColor') ?>"
+                    skyColor="<?php echo $this->getAttribute('skyColor') ?>"
                     />
         
         <?php echo $this->scene ?>

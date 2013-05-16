@@ -43,6 +43,7 @@ class X3D {
 /*** Class Inclusion ***/
 include __DIR__.'/TypeDef.php';
 include __DIR__.'/Coordinates.php';
+include __DIR__.'/Rotation.php';
 include __DIR__.'/Color.php';
 include __DIR__.'/FaceSets.php';
 include __DIR__.'/Material.php';
@@ -53,7 +54,4 @@ include __DIR__.'/Shape.php';
 include __DIR__.'/Light.php';
 include __DIR__.'/Camera.php';
 include __DIR__.'/Scene.php';
-
-/*** Predefined shapes ***/
-
 ?>

@@ -19,7 +19,7 @@ class Light extends BasicObject {
     }
     
     public function toX3D() {
-        parent::toX3D('light');
+        return parent::toX3D('light');
     }
     
     public function setType($type) {

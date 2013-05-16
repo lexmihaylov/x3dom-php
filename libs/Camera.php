@@ -16,7 +16,7 @@ class Camera extends BasicObject {
     }
     
     public function toX3D() {
-        parent::toX3D('camera');
+        return parent::toX3D('camera');
     }
 }
 

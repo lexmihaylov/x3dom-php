@@ -10,18 +10,16 @@
  *
  * @author alexander
  */
-class Rotation {
-    public $x, $y, $z, $angle;
+class Rotation extends Coordinates{
+    public $angle;
     
     public function __construct($x, $y, $z, $angle) {
-        $this->x = $x;
-        $this->y = $y;
-        $this->z = $z;
+        parent::__construct($x, $y, $z);
         $this->angle = $angle;
     }
     
     public function toString() {
-        return "{$this->x} {$this->y} {$this->z} {$this->angle}";
+        return parent::toString()." {$this->angle}";
     }
     
     public static function Create($x, $y, $z, $angle) {

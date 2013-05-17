@@ -44,12 +44,15 @@ class X3D {
 include __DIR__.'/TypeDef.php';
 include __DIR__.'/Coordinates.php';
 include __DIR__.'/Rotation.php';
+include __DIR__.'/Scale.php';
 include __DIR__.'/Color.php';
 include __DIR__.'/FaceSets.php';
 include __DIR__.'/Material.php';
 include __DIR__.'/Transform.php';
 include __DIR__.'/BasicObject.php';
 include __DIR__.'/DefinedShape.php';
+include __DIR__.'/Group.php';
+include __DIR__.'/X3DShape.php';
 include __DIR__.'/Shape.php';
 include __DIR__.'/Light.php';
 include __DIR__.'/Camera.php';

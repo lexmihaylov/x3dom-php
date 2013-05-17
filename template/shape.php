@@ -1,4 +1,4 @@
-<Shape>
+<Shape <?php echo $this->attributes2String() ?> >
 
     <?php if($this->shape() instanceof DefinedShape): ?>
         <?php echo $this->shape()->toX3D() ?>

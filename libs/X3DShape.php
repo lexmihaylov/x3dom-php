@@ -16,8 +16,10 @@ class X3DShape extends BasicObject {
 
 
     public function __construct($filename) {
+        parent::__construct();
         $this->x3dFile = $filename;
     }
+    
     public function toX3D() {
         $this->group = file_get_contents($this->x3dFile);
         return parent::toX3D('group');

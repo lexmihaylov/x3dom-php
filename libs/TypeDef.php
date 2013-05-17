@@ -2,6 +2,7 @@
 
 interface Attribute {
     const Def = 'DEF';
+    const description = 'description';
 }
 
 interface ShapeType {
@@ -44,6 +45,9 @@ interface SceneNavigationAttribute {
     const visibilityLimit = 'visibilityLimit';
     const type = 'type';
     const avatarSize = 'avatarSize';
+    const transitionType = 'transitionType';
+    const transitionTime = 'transitionTime';
+    const speed = 'speed';
 }
 
 interface SceneBackgroundAttribute {
@@ -70,5 +74,9 @@ interface CameraAttribute {
     const position = 'position';
     const orientation = 'orientation';
     const fieldOfView = 'fieldOfView';
+}
+
+interface InlineAttributes {
+    const url = 'url';
 }
 ?>

@@ -13,16 +13,37 @@
 class Scene extends X3D {
     private $shapes = array();
     protected $scene = '';    
+    
+    private $navigationInfo;
+    private $background;
     public function __construct() {
         parent::__construct();
+        $this->navigationInfo = new X3D();
+        $this->background = new X3D();
         
-        $this->setAttribute(SceneNavigationAttribute::headlight, 'false');
-        $this->setAttribute(SceneNavigationAttribute::visibilityLimit, '0.0');
-        $this->setAttribute(SceneNavigationAttribute::type, '"EXAMINE", "ANY"');
-        $this->setAttribute(SceneNavigationAttribute::avatarSize, '0.25, 1.75, 0.75');
+        $this->navigationInfo->setAttribute(SceneNavigationAttribute::headlight, 'false');
+        $this->navigationInfo->setAttribute(SceneNavigationAttribute::visibilityLimit, '0.0');
+        $this->navigationInfo->setAttribute(SceneNavigationAttribute::type, "'EXAMINE', 'ANY'");
+        $this->navigationInfo->setAttribute(SceneNavigationAttribute::avatarSize, '0.25, 1.75, 0.75');
         
-        $this->setAttribute(SceneBackgroundAttribute::groundColor, Color::CreateString(0.051, 0.051, 0.051));
-        $this->setAttribute(SceneBackgroundAttribute::skyColor, Color::CreateString(0.051, 0.051, 0.051));
+        $this->background->setAttribute(SceneBackgroundAttribute::groundColor, Color::CreateString(0.051, 0.051, 0.051));
+        $this->background->setAttribute(SceneBackgroundAttribute::skyColor, Color::CreateString(0.051, 0.051, 0.051));
+    }
+    
+    public function navigationInfo() {
+        return $this->navigationInfo;
+    }
+    
+    public function background() {
+        return $this->background;
+    }
+    
+    public function setNavigationInfo($navInfo) {
+        $this->navigationInfo = $navInfo;
+    }
+    
+    public function setBackground($background) {
+        $this->background = $background;
     }
     
     private function createX3D() {

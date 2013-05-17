@@ -5,14 +5,8 @@
         <meta name="generator" content="Blender 2.66 (sub 1)" />
     </head>
     <Scene>
-        <NavigationInfo headlight="<?php echo $this->getAttribute('headlight') ?>"
-                        visibilityLimit="<?php echo $this->getAttribute('visibilityLimit') ?>"
-                        type='<?php echo $this->getAttribute('type') ?>'
-                        avatarSize="<?php echo $this->getAttribute('avatarSize') ?>"
-                        />
-        <Background groundColor="<?php echo $this->getAttribute('groundColor') ?>"
-                    skyColor="<?php echo $this->getAttribute('skyColor') ?>"
-                    />
+        <NavigationInfo <?php echo $this->navigationInfo()->attributes2String() ?> />
+        <Background <?php echo $this->background()->attributes2String() ?> />
         
         <?php echo $this->scene ?>
         

@@ -30,6 +30,10 @@ class BasicObject extends X3D {
     public function toX3D($template) {
         return $this->transform()->toX3D(parent::toX3D($template));
     }
+    
+    public static function FromFile($filename) {
+        return new X3DShape($filename);
+    }
 }
 
 ?>

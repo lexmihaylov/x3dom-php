@@ -1,6 +1,6 @@
 <?php
 require 'libs/X3D.php';
-require 'blender/Renderer.php';
+require 'blender/Shell.php';
 
 // create scene object
 $scene = new Scene();
@@ -73,7 +73,7 @@ $camera->transform()->setAttribute(TransformAttribute::rotation, Rotation::Creat
 $scene->appendShape($camera);
 
 // Render an image
-$render = new Renderer($scene);
+$render = new Shell($scene);
 
 //FULL Path needed
 $render->saveImage(__DIR__.'/tmp/scene_example_image#');

@@ -12,7 +12,7 @@
  */
 require __DIR__.'/Config.php';
 
-class Renderer {
+class Shell {
     private $x3dInstance;
     
     public function __construct($x3dInstance) {

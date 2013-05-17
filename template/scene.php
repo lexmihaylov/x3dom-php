@@ -2,7 +2,7 @@
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
     <head>
-        <meta name="generator" content="Blender 2.66 (sub 1)" />
+        <meta name="generator" content="<?php echo X3D_API_VERSION ?>" />
     </head>
     <Scene>
         <NavigationInfo <?php echo $this->navigationInfo()->attributes2String() ?> />

@@ -2,21 +2,15 @@
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
     <head>
-        <meta name="generator" content="Blender 2.66 (sub 1)" />
+        <meta name="generator" content="x3dom-php version 0.1b" />
     </head>
     <Scene>
-        <NavigationInfo headlight="false"
-                        visibilityLimit="0.0"
-                        type='"EXAMINE", "ANY"'
-                        avatarSize="0.25, 1.75, 0.75"
-                        />
-        <Background groundColor="0.051 0.051 0.051"
-                    skyColor="0.051 0.051 0.051"
-                    />
+        <NavigationInfo headlight="false" visibilityLimit="0.0" type="'EXAMINE', 'ANY'" avatarSize="0.25, 1.75, 0.75"  />
+        <Background groundColor="0.051 0.051 0.051" skyColor="0.051 0.051 0.051"  />
         
         
 <Transform translation="0 0 0"  >
-    <Shape>
+    <Shape  >
 
     
     <Appearance>
@@ -32,7 +26,7 @@
 
 
 <Transform translation="2.5 2 -4.5"  >
-    <Shape>
+    <Shape  >
 
             <Box size="1 1 1"  />
     
@@ -46,7 +40,7 @@
 
 
 <Transform translation="2.5 2 -3"  >
-    <Shape>
+    <Shape  >
 
             <Box size="1 1 1"  />
     
@@ -60,7 +54,7 @@
 
 
 <Transform translation="2.5 2 -1.5"  >
-    <Shape>
+    <Shape  >
 
             <Box size="1 1 1"  />
     
@@ -74,7 +68,7 @@
 
 
 <Transform translation="0 1.5 -4.5"  >
-    <Shape>
+    <Shape  >
 
             <Box size="1 3 1"  />
     

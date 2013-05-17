@@ -57,4 +57,8 @@ include __DIR__.'/Shape.php';
 include __DIR__.'/Light.php';
 include __DIR__.'/Camera.php';
 include __DIR__.'/Scene.php';
+
+/*** Definitions ***/
+
+define('X3D_API_VERSION', 'x3dom-php version 0.1b');
 ?>

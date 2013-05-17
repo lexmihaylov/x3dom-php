@@ -5,6 +5,7 @@ interface Attribute {
 }
 
 interface ShapeType {
+    const Shape = 'Shape';
     const Box = 'Box';
     const Shpere = 'Sphere';
     const Cone = 'Cone';
@@ -20,6 +21,7 @@ interface ShapeAtrribute {
     const topRadius = 'topRadius';
     const length = 'length';
     const string = 'string';
+    const useObject = 'USE';
 }
 
 interface MaterialAttribute {

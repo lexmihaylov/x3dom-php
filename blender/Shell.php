@@ -16,8 +16,14 @@ class Shell {
     private $x3dInstance;
     private $shellCommand = array();
     
+    private $resolution_x;
+    private $resolution_y;
+    
     public function __construct($x3dInstance) {
         $this->x3dInstance = $x3dInstance;
+        
+        $this->resolution_x = Config::$screenResolution['x'];
+        $this->resolution_y = Config::$screenResolution['y'];
         
     }
     
@@ -25,6 +31,11 @@ class Shell {
         $tmp_file = __DIR__.'/tmp.x3d';
         if(file_exists($tmp_file))
             unlink($tmp_file);
+    }
+    
+    public function setResolution($x, $y) {
+        $this->resolution_x = $x;
+        $this->resolution_y = $y;
     }
 
 
@@ -41,7 +52,8 @@ class Shell {
         $executable = Config::$blenderPath;
         $tmpFile = __DIR__.'/tmp.x3d';
         
-        $this->shellCommand[] = "SCRIPT_DIR=\"{$scriptDir}\" TMP_FILE=\"{$tmpFile}\" {$executable}";
+        $this->shellCommand[] = "SCRIPT_DIR=\"{$scriptDir}\" TMP_FILE=\"{$tmpFile}\" ".
+                "RES_X=\"{$this->resolution_x}\" RES_Y=\"{$this->resolution_y}\" {$executable}";
     }
     
     private function prepareImportCommand() {

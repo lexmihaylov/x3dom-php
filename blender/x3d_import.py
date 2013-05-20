@@ -16,3 +16,9 @@ import_x3d.load_web3d(os.getenv('TMP_FILE'),
 	)
 
 bpy.context.scene.camera = bpy.data.objects['Viewpoint']
+
+#render settings
+rnd = bpy.data.scenes[0].render
+
+rnd.resolution_x = int(os.getenv('RES_X'))
+rnd.resolution_y = int(os.getenv('RES_Y'))
